@@ -1,0 +1,34 @@
+name: sapphire
+version: 0.1
+description: A player chat plugin
+#load: POSTWORLD
+author: psygate
+main: com.psygate.minecraft.spigot.sovereignty.sapphire.Sapphire
+database: false
+depends: [nucleus, ivory]
+
+commands:
+  channel:
+    default: true
+
+  message:
+    default: true
+    aliases: [w, whisper, tell, msg]
+
+  reply:
+    default: true
+    aliases: [r, re]
+
+  replychannel:
+    default: true
+    aliases: [rc, rec]
+
+  bindtower:
+    default: true
+    aliases: [sbt]
+    description: Binds a tower to a group, target the redstone lamp to use this command. Maximum distance to tower is 5 blocks.
+    usage: /bindtower
+
+  reloadsapphire:
+    default: op
+    description: Reloads the sapphire configuration.

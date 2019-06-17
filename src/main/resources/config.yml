@@ -1,0 +1,15 @@
+global_channel:
+  name: "global"
+  message_template: "[<channel_name>] <source_name>: <msg>"
+  range: 500
+
+group_channels:
+  message_template: "[<channel_name>] <source_name>: <msg>"
+
+whisper:
+  recipient_format: "<dark_purple>[<sender_name>]: <msg>"
+  sender_format: "<dark_purple>[To <recipient_name>]: <msg>"
+
+towers:
+  participant_multiplier: 1
+  range_multiplier: 5
